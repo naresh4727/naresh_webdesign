@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="FormEvent.js"></script>
+</head>
+<body>
+    <h1>Event Form</h1>
+    <form action="post" id="sform">
+        <label for="">Name</label> <input type="text" id="sname">
+        <br><br>
+        <label for="">Class</label> <input type="text" id="sclass">
+        <br><br>
+        <label for="">Country</label>
+        <select  id="scountry">
+            <option value="IND">IND</option>
+            <option value="USA">USA</option>
+            <option value="UAE">UAE</option>
+            <option value="UK">UK</option>
+            <option value="AUS">AUS</option>
+        </select>
+        <input type="submit">
+    </form>
+    <div id="test" style=" border: 1px solid red; margin-top: 20px;"></div>
+</body>
+</html>

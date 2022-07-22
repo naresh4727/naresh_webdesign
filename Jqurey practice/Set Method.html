@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Method</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            background-color:slateblue;
+            padding: 10px;
+            border: 1px solid black;
+            color: gold;
+        }
+        .red{
+            color: rgb(65, 179, 216);
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="test">
+        <h2>test box</h2>
+        <p>Lorem, <span>ipsum dolor sit</span> amet consectetur adipisicing elit.</p>
+    </div>
+    <br>
+    <button id="clickbutton">Set Value</button>
+
+    <br><br>
+
+    <form action="post" id="sform">
+        <label for="">Name</label> <input type="text" id="sname">
+        <br><br>
+        <label for="">Class</label> <input type="text" id="sclass">
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        $(document).ready(function(){
+
+           $("#clickbutton").click(function(){
+            $("#box h2").text("Naresh kardas");
+            $("#box p").html("i from <b>Ahmedabad</b>");
+            $("#box h2").attr("class","red");
+           });
+
+           $(document).ready(function(){
+
+            $("#sname").val("Naresh Kardas");
+            $("#sclass").val("Bcom");
+           });
+        });
+    </script>
+</body>
+</html>

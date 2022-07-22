@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+    <link rel="stylesheet" href="getElementsByClass.css">
+</head>
+<body>
+    <header id="header">
+        <h2 id="header-title">Kardas</h2>
+        <p id="tagline">Computer Education</p>
+    </header>
+    <div id="content">
+        <h4>Courses</h4>
+        <ul id="item">
+            <li class="list-item">Graphics</li>
+            <li class="list-item">Web</li>
+            <li class="list-item">Video</li>
+            <li class="list-item">3D</li>
+        </ul>
+        <form>
+            <input type="text">
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script>
+
+       var items=document.getElementsByClassName('list-item');
+       items[1].textContent='Javascript';
+       items[3].textContent='Tally';
+       items[1].style.fontWeight='bold';
+       items[3].style.color='red';  
+
+       for (var i=0; i < items.length; i++){
+           items[i].style.backgroundColor='yellow';
+       }
+        
+    </script>
+</body>
+</html>

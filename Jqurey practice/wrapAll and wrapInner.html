@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrapAll and wrapInner</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+    <style>
+        #test{
+            background-color: pink;
+            padding: 5px;
+        }
+        .bg{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>wrapAll and wrapInner</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellat a maiores, perspiciatis ipsam et aperiam esse nesciunt laborum pariatur porro adipisci labore eligendi quo officiis rerum harum dolorum commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut magnam doloremque, amet sed nesciunt nihil? Tempore numquam, repudiandae laborum incidunt voluptate aut neque modi iste mollitia, exercitationem dolore nostrum magnam.</p>
+    <br>
+    <button id="wallbtn">WRAPAll</button>
+    <button id="winbtn">WrapInner</button>
+
+    <script>
+       $(document).ready(function(){
+        $("#wallbtn").click(function(){
+            $("p").wrapAll('<div id="test"></div>');
+        });
+        $("#winbtn").click(function(){
+            $("h1").wrapInner('<spna class="bg"></span>');
+        });
+       });
+    </script>
+</body>
+</html>

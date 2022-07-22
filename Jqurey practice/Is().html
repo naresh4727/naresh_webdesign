@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is()</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <h1>Is()</h1>
+    <div>
+        <p>my name is naresh</p>
+        <p>web designer</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas numquam nam cupiditate, tempore mollitia ullam porro perspiciatis placeat suscipit quisquam at. Omnis cupiditate veniam voluptatibus! Perspiciatis fugiat eveniet non cum.</p>
+    <h1>Tops Technologies</h1>
+    <p>Maninagar Ahmedabad</p>
+    <script>
+        $(document).ready(function(){
+      /*    if($('p').parent().is('div')){
+                alert($('p').parent().is('div'));
+            }    */
+
+            $("p").click(function(){
+                if($(this).parent().is("div")){
+                    $(this).css("background","gold");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

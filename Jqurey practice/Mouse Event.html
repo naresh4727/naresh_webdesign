@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            background-color:chartreuse;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="test">
+        <h2>test box</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+
+            $("#box").click(function(){
+                $("#box").css("background-color","red");
+                $("#box").css("color","white");
+                $("#box").css("text-align","right");
+            })
+
+            $("#box").dblclick(function(){
+                $("#box").css("background-color","black");
+                $("#box").css("color","white");
+                $("#box").css("text-align","center");
+            })
+
+            $("#box").contextmenu(function(){
+                $("#box").css("background-color","gold");
+                $("#box").css("color","black");
+                $("#box").css("text-align","left");
+            })
+
+            $("#box").mouseenter(function(){
+                $("#box").css("background-color","darkred");
+                $("#box").css("color","aqua");
+                $("#box").css("text-align","center");
+            })
+
+            $("#box").mouseleave(function(){
+                $("#box").css("background-color",("aquamarine"));
+                $("#box").css("color","black");
+                $("#box").css("text-align","left");
+            
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+*{
+    margin: 30px auto 0px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Tahoma;
+}
+h1{
+    font-size: 50px;
+}
+#btn{
+    padding: 0.5rem 3rem;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#change{
+    background-color: white;
+    color: black;
+}

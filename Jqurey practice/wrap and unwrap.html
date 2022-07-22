@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap and Unwrap</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 100px;
+        }
+        #box{
+            background-color: olive;
+            padding: 10px;
+            border: 10px solid maroon;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Wrap and Unwrap</h1>
+        <div id="box" >
+            <h2>test box</h2>
+            <p>Lorem, <span>ipsum dolor sit</span> amet consectetur adipisicing elit.</p>
+        </div>
+        <br>
+            <button id="wbtn">WRAP</button>
+            <button id="uwbtn">UNWRAP</button>
+    </center>
+
+    <script>
+        $(document).ready(function(){
+            
+            $("#wbtn").click(function(){
+                $("#box p").wrap("<h2></h2>");
+            });
+
+            $("#uwbtn").click(function(){
+                $("#box p").unwrap();
+            });
+        });
+    </script>
+</body>
+</html>

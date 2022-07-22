@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Method</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            background-color:chartreuse;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="test test2">
+        <h2>test box</h2>
+        <p>Lorem, <span>ipsum dolor sit</span> amet consectetur adipisicing elit.</p>
+    </div>
+
+
+    <h1>Event Form</h1>
+    <form action="post" id="sform">
+        <label for="">Name</label> <input type="text" id="sname">
+        <br><br>
+        <label for="">Class</label> <input type="text" id="sclass">
+        <br><br>
+        <label for="">Country</label>
+        <select  id="scountry">
+            <option value="IND">IND</option>
+            <option value="USA">USA</option>
+            <option value="UAE">UAE</option>
+            <option value="UK">UK</option>
+            <option value="AUS">AUS</option>
+        </select>
+        <input type="submit">
+    </form>
+    
+
+    <script>
+        $(document).ready(function(){
+
+            var a = $('body').html();
+            console.log(a);
+            
+            var b = $("#box").text();
+            console.log(b);
+
+            var c = $("#box").attr("class");
+            console.log(c);
+
+            $("#sform").submit(function(){
+              var name = $("#sname").val();
+              var classname = $("#sclass").val();
+              var scountry = $("#scountry").val();
+              alert("Hello " + name + " Class " + classname + " Country " + scountry);  
+            });
+
+            });
+    </script>
+</body>
+</html>

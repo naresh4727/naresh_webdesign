@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Method</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .first{
+            background-color: aqua;
+        }
+        .second{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>test box</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <br><br>
+    <button id="addbutton">Add Class</button>
+    <button id="removebutton">Remove Calss</button>
+    <button id="togglebutton">Toggle Cals</button>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $("#addbutton").click(function(){
+                $("#box").addClass("first second");
+            });
+
+            $("#removebutton").click(function(){
+                $("#box").removeClass("second");
+            });
+
+            $("#togglebutton").click(function(){
+                $("#box").toggleClass("second");
+            });
+        });
+    </script>
+</body>
+</html>

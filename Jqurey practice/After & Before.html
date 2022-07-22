@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after and before</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            background-color: olive;
+            padding: 10px;
+            border: 10px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>After & Before</h1>
+    <div id="box" >
+        <h2>test box</h2>
+        <p>Lorem, <span>ipsum dolor sit</span> amet consectetur adipisicing elit.</p>
+    </div>
+    <br>
+    <button id="afterbtn">After Event</button>
+    <button id="beforebtn">Before Event</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#afterbtn").click(function(){
+                $("#box").after("<h2>Naresh Kardas</h2>");
+            });
+
+            $("#beforebtn").click(function(){
+                $("#box").before("<h2>Commerce</h2> <p> this is a p tag</p>");
+            });
+        });
+    </script>
+</body>
+</html>

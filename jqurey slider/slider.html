@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Slider</title>
+    <style>
+.cardslink{
+    padding-right: 23px;
+    text-decoration: none;
+    color: #1D1D1f;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cardslink:hover{
+    color: #1D1D1f;
+    text-decoration: underline;
+}
+.pt{
+    padding-top: 100px;
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Glide</a>
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item p-2">
+                <a class="nav-link active" aria-current="page" href="#">Github</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Docs</a>
+              </li>
+              <li class="nav-item p-2">
+                <button type="button" class="btn btn-dark">Download</button>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>  
+      <div class="container">
+        <div class="row p-3 " >
+          <div class="col-md-12 pt text-center">
+            <div class="row slider">
+              <div class="col-md-1 ">
+               <a href="#"> <img src="store-card-13-mac-nav-202203.png" alt="mac" width="120px"></a>
+               <a href="#" class="cardslink">Mac</a>
+              </div>
+              <div class="col-md-1 ">
+               <a href="#"><img src="store-card-13-iphone-nav-202109_GEO_EMEA.png" alt="iphone" width="120px"></a>
+               <a href="#" class="cardslink">iphone</a>
+              </div>
+              <div class="col-md-1">
+                <a href="#"><img src="store-card-13-ipad-nav-202108.png" alt="ipad" width="120px"></a>
+                <a href="#" class="cardslink">ipad</a>
+              </div>
+              <div class="col-md-1 ">
+               <a href="#"><img src="store-card-13-watch-nav-202203.png" alt="watch" width="120px"></a>
+               <a href="#" class="cardslink">Apple watch</a>
+              </div>
+              <div class="col-md-1 col-sm-1">
+                <a href="#"><img src="store-card-13-airpods-nav-202110.png" alt="airpods" width="120px"></a>
+                <a href="#" class="cardslink">AirPods</a>
+              </div>
+              <div class="col-md-1 col-sm-1">
+                <a href="#"><img src="store-card-13-airtags-nav-202108.png" alt="airtags" width="120px"></a>
+                <a href="#" class="cardslink">Airtags</a>
+              </div>
+              <div class="col-md-1 col-sm-1">
+                <a href="#"><img src="store-card-13-appletv-nav-202108.png" alt="appletv" width="120px"></a>
+                <a href="#" class="cardslink">Appletv</a>
+              </div>
+              <div class="col-md-1 col-sm-1">
+                <a href="#"><img src="store-card-13-homepod-nav-202110.png" alt="homepod" width="120px"></a>
+                <a href="#" class="cardslink">homepod</a>
+              </div>
+              <div class="col-md-1 col-sm-1">
+                <a href="#"><img src="store-card-13-accessories-nav-202203.png" alt="accessories" width="120px"></a>
+                <a href="#" class="cardslink">Accessories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+      $('.slider').slick({
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });								
+      </script>     
+</body>
+</html>

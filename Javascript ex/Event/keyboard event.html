@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard event</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        p{
+            color: tomato;
+            background-color: aquamarine;
+            font-size: 50px;
+            font-weight: 900;
+        }
+        #form{
+            border-radius: 5px;
+            width: 250px;
+            height: 20px;
+        }
+    </style>
+
+    <script>
+
+        function key() {
+            document.getElementById('form').style.backgroundColor="red";
+            document.getElementById('form').style.color="white";
+            document.getElementById('form').style.textTransform="uppercase";
+ }
+
+    </script>
+</head>
+<body>
+
+    <p>KEYBOARD EVENT</p>
+
+    <input type="text" id="form" onkeyup="key()">
+    
+</body>
+</html>

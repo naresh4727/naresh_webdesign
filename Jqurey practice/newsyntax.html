@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #test1{
+            background-color: aqua;
+            width: 300px;
+            padding: 30px;
+            border: solid 2px black;
+        }
+        #test2{
+            background-color: aqua;
+            width: 300px;
+            padding: 30px;
+            border: solid 2px black;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test1">
+        <h2>Test Box1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ratione a quisquam labore minima ea nisi aliquid aperiam exercitationem, enim animi vero corporis provident nobis dolorum laborum debitis vel omnis.</p>
+    </div>
+
+    <div id="test2">
+        <h2>Test Box2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officiis eos error illum et sint, reprehenderit accusantium fugit voluptas perspiciatis, minus culpa assumenda id! Quaerat et nihil eum odit deleniti.</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var a = $("#test1").html();
+            console.log(a);
+        });
+
+        $(document).ready(function(){
+            var b = $("#test2").html();
+            console.log(b);
+        });
+    </script>
+</body>
+</html>

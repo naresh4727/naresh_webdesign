@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade method</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            background-color:olive;
+            padding: 10px;
+            border: 5px solid maroon;
+            color: gold;
+            font-weight: 900;
+            text-align: center;
+            width: 600px;
+            height: 140px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fade Method</h1>
+    <div id="box">
+        <h3>Method</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum odio culpa eveniet, suscipit architecto fugit nostrum amet sunt animi, necessitatibus eius tempore eaque id officia esse, dolorum consectetur voluptas.</p>
+    </div>
+    <br>
+    <br>
+    <button id="obtn">FadeOut</button>
+    <button id="ibtn">fadeIn</button>
+    <button id="tobtn">fadeToggle</button>
+    <button id="tbtn">fadeTo</button>
+    <script>
+        $(document).ready(function(){
+
+            $("#obtn").click(function(){
+                $("#box").fadeOut(3000, function(){
+                    alert("This is Hide")
+                });
+            });
+
+            $("#ibtn").click(function(){
+                $("#box").fadeIn(2000, function(){
+                    alert("This is Show")
+                });
+            });
+
+            $("#tobtn").click(function(){
+                $("#box").fadeToggle(2000, function(){
+                    alert("Toggle")
+                });
+            });
+
+            $("#tbtn").click(function(){
+                $("#box").fadeTo(2000, 0.2, function(){
+                    alert("Opacity")
+                });
+            });
+        });
+    </script>
+</body>
+</html>

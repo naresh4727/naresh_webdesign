@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            background-color: olive;
+            padding: 10px;
+            border: 10px solid black;
+        }
+        #box2{
+            background-color: sandybrown;
+            padding: 10px;
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Clone Method</h1></center>
+    <div id="box" >
+        <h2>test box</h2>
+        <p>Lorem, <span>ipsum dolor sit</span> amet consectetur adipisicing elit.</p>
+    </div>
+    <br>
+    <div id="box2">
+        <p>this is another div</p>
+    </div>
+    <br>
+    <center><button id="clonebtn">Clone</button></center>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#clonebtn").click(function(){
+                $("#box h2").clone().prependTo("#box2");
+                $("#box p").clone().appendTo("#box2");
+            });
+        });
+    </script>
+</body>
+</html>

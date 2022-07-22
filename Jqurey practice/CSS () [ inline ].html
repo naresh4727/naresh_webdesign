@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css()</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>test box</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <br><br>
+    <button id="stylebutton">Add style</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#stylebutton").click(function(){
+                $("#box").css({
+                    "background-color":"black",
+                    "color":"white",
+                    "border":"20px dotted red",
+                    "font-size":"20px"
+                });
+            });
+        });
+    </script>
+</body>
+</html>

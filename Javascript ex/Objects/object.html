@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+
+  /*     let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24
+        };
+        console.log(person);  */
+
+
+  /*    let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24
+        };
+        person.firstnName='rahul'
+        console.log(person);  */
+
+
+   /*   let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24
+        };
+        person.emali='kardasnaresh@gamil.com';
+        console.log(person);   */
+
+
+   /*   let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24
+        };
+        delete  person.lastName;
+        console.log(person); */
+
+
+   /*   let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24
+        };
+        console.log('email' in person); */
+
+
+     /* let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24
+        };
+        for(let key in person){
+            console.log(key + ' :' + person[key]);
+
+        };  */ 
+
+
+   /*   let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24,
+            hobbies:['travel', 'music', 'cricket']
+        };
+        console.log(person.hobbies[2]);  */
+
+
+   /*   let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24,
+            living:{
+                'city':'Ahmedabad',
+                'pincode':388024
+            }
+        };
+        console.log(person.living.pincode);  */
+
+     /* let person={
+            firstnName:'naresh',
+            lastName:'kardas',
+            age:24,
+            salary : function(){
+                return 25000;
+            }
+        };
+        console.log(person.salary());  */
+
+         let person={
+            firstName:'naresh',
+            lastName:'kardas',
+            age:24,
+            fullName:function(){
+                return this.firstName+' '+this.lastName;
+            }
+        };
+        console.log(person.fullName());
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+div#wrapper{
+    margin: 10px auto 0px auto;
+    width: 75%;
+}
+div#wrapper h1{
+    text-align: center;
+    width: 30%;
+    background-color: #203d3a;
+    color: #fff;
+    line-height: 75px;
+    border-radius: 0px 0px 20px 20px;
+}
+ #img1{
+    width: 30%;
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+}
+#img2{
+    width: 30%;
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+}
+div#block1, div#block2{
+    margin-top: 25px;
+}

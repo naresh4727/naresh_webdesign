@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplaceWith and ReplaceAll</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 100px;
+        }
+        #box{
+            background-color: rgb(187, 187, 18);
+            padding: 10px;
+            border: 10px solid maroon;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>ReplaceWith and ReplaceAll</h1>
+        <div id="box" >
+            <h2>test box</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, error nostrum? Corporis itaque nisi autem eos ipsa obcaecati quas cupiditate!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cum ex molestias illum corporis nulla expedita assumenda dolor amet. Blanditiis soluta, temporibus rerum nihil eum incidunt dolorem dolores ut repellat ducimus numquam nobis aspernatur beatae iure libero. Ad hic adipisci quas velit nemo! Deserunt eius odio libero, mollitia culpa quaerat.</p>
+        </div>
+        <br>
+            <button id="repbtn">Replace</button>
+        </center>
+        <script>
+            $(document).ready(function(){
+
+                $("#repbtn").click(function(){
+    //              $("#box p:nth-child(3)").replaceWith("<h3>Naresh</h3>");
+                    $("<h1>Kardas</h1>").replaceAll("#box");
+                });
+            });
+        </script>
+</body>
+</html>
