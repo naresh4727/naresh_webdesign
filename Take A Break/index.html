@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Take A Break - Home</title>
   <link rel="icon" href="img/take-a-break.png">
-  <link rel="stylesheet" href="Take A Break.css">
+  <link rel="stylesheet" href="css/Take-A-Break.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Great+Vibes&family=PT+Sans+Narrow&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,500;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fontstyle">
     <div class="container-fluid">
@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item me-4">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item me-4">
             <a class="nav-link" href="About.html">About us</a>
@@ -59,30 +59,37 @@
   <!-- Navigation End -->
 
   <!-- Slider -->
+ <div class="slider">
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" data-bs-interval="3000">
         <img src="img/TAB-Banner.jpg" class="d-block w-100" alt="...">
+        <div class="slider-s1">
+          <h1 class="slider-text">Welcome To  <br> <span>Take A Break </span></h1>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="3000">
         <img src="img/jalori-pass.jpg" class="d-block w-100" alt="...">
+        <div class="slider-s2">
+          <h1 class="slider-text">A Beautiful Escape  <br>  <span>KULLU - MANALI</span></h1>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="3000">
         <img src="img/paragliding-banner.jpg" class="d-block w-100" alt="...">
+        <div class="slider-s3">
+          <h1 class="slider-text">Adventure To  <br>  <span>PARAGLIDING</span> </h1>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="3000">
         <img src="img/HAMPTA-PASS.jpg" class="d-block w-100" alt="...">
+        <div class="slider-s4">
+          <h1 class="slider-text">Trek To <br> <span>HIMALAYAN - PARADISE</span></h1>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+
+</div>
   <!-- Slider End -->
 
   <!-- Card Section -->
@@ -114,14 +121,14 @@
 
   <!-- Information -->
   <div class="container">
-    <div class="row m-5 info-bg-c infomation">
-      <div class="col-md-5">
+    <div class="row mt-5 info-bg-c infomation">
+      <div class="col-md-5 ">
         <h2>Welcome<br>
           to TAKE A BREAK
         </h2>
         <img src="img/stars.png" class="mb-3" alt="">
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 ">
         <h5>We are certified under the government protocol of Himachal Pradesh tourism act 2002.</h5>
         <p>Take a break was established in july 2017. We operate to provide our traveling mates a hustle free 
           traveling environment. Our motto is not related to business sustainability only but to create a travelers 
@@ -136,7 +143,7 @@
   <!-- Localization and attractions Img -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 mt-4 mb-3">
         <h1 class="l-a-heading p-3 text-center">Localization and attractions</h1>
       </div>
     </div>
@@ -162,15 +169,15 @@
     <!-- Localization and attractions Img End-->
 
     <!-- Services and standards info-->
-    <div class="container-fluid">
-      <div class="row m-5 s-s-info ">
-        <div class="col-md-5 d-flex justify-content-center">
+    <div class="container">
+      <div class="row mt-5 mb-2 s-s-info ">
+        <div class="col-md-5 pt-3 pb-2 d-flex justify-content-center">
           <h1>Services<br>
             and standards
           </h1>
           <br> 
         </div>
-        <div class="col-md-7 d-flex justify-content-start">
+        <div class="col-md-7 pt-2 pb-1 d-flex justify-content-start">
           <p>We moreover provide services according to our clients budget and can customize our packages with respect to
             timings, interests and affordability of our customers.</p>
         </div>
@@ -261,7 +268,8 @@
         </div>
         <div class="col-md-6">
           <img src="img/diet.png" alt="">
-          <h3>Food</h3>
+          <h3>Food</h3> 
+          <br>
           <p>Enjoy Pahari dishes made with traditional style and farm fresh food.</p>
         </div>
       </div>
@@ -269,114 +277,116 @@
     <!-- Services and standards info 2 End-->
 
     <!-- Booking Inquiry Form-->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mt-5">
-          <h1 class="form-headline">Booking Inquiry</h1>
+    <div class="form-bg-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-5">
+            <h1 class="form-headline">Booking Inquiry</h1>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <form action="#" method="post">
-        <div class="row g-3 m-2">
-          <div class="col-md">
-            <label for="Name">Name</label>
-            <input type="text" id="name" name="name" class="form-control" required>
+      <div class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="row g-3 m-2">
+            <div class="col-md">
+              <label for="Name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="col-md">
+              <label for="mobile number">Mobile Number</label>
+              <input type="text" id="mobile number" name="Mobile number" class="form-control" required pattern="[0-9]{10}"
+                title="Enter Valid Number">
+            </div>
+            <div class="col-md">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
           </div>
-          <div class="col-md">
-            <label for="mobile number">Mobile Number</label>
-            <input type="text" id="mobile number" name="Mobile number" class="form-control" required pattern="[0-9]{10}"
-              title="Enter Valid Number">
+          <div class="row g-3 m-2">
+            <div class="col-md">
+              <label for="date">Arrival</label>
+              <input type="date" id="Arrival" name="Arrival" class="form-control" required>
+            </div>
+            <div class="col-md">
+              <label for="mobile number">Departure</label>
+              <input type="date" id="Departure" name="Departure" class="form-control" required>
+            </div>
+            <div class="col-md">
+              <label for="sectors">Trip type</label>
+              <select class="form-select" id="Trip type" required>
+                <option selected>Budget Trip</option>
+                <option value="1">Family Trip</option>
+                <option value="2">Luxury Trip</option>
+              </select>
+            </div>
           </div>
-          <div class="col-md">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" class="form-control" required>
+          <div class="row g-3 m-2">
+            <div class="col-md">
+              <label for="Adults">Adults</label>
+              <select class="form-select" id="Adults" name="Adults" required>
+                <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+                <option value="2">5</option>
+                <option value="2">6</option>
+                <option value="2">7</option>
+                <option value="2">8</option>
+                <option value="2">9</option>
+                <option value="2">10</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <label for="Children">Children</label>
+              <select class="form-select" id="Children" name="Children" required>
+                <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+                <option value="2">5</option>
+                <option value="2">6</option>
+                <option value="2">7</option>
+                <option value="2">8</option>
+                <option value="2">9</option>
+                <option value="2">10</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <label for="Group">Group</label>
+              <select class="form-select" id="Group" name="Group" required>
+                <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+                <option value="2">5</option>
+                <option value="2">6</option>
+                <option value="2">7</option>
+                <option value="2">8</option>
+                <option value="2">9</option>
+                <option value="2">10</option>
+              </select>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-mb m-2">
+              <label for="Message">Message</label>
+              <textarea class="form-control" id="Message" name="Message" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn col-md mt-5">
+              <button type="submit" class="form-btn-color btn-shadow">Booking Inquiry</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md mt-3 text-center text-btm">
+          <p>Book Your Trip With Us.</p>
         </div>
-        <div class="row g-3 m-2">
-          <div class="col-md">
-            <label for="date">Arrival</label>
-            <input type="date" id="Arrival" name="Arrival" class="form-control" required>
-          </div>
-          <div class="col-md">
-            <label for="mobile number">Departure</label>
-            <input type="date" id="Departure" name="Departure" class="form-control" required>
-          </div>
-          <div class="col-md">
-            <label for="sectors">Trip type</label>
-            <select class="form-select" id="Trip type" required>
-              <option selected>Budget Trip</option>
-              <option value="1">Family Trip</option>
-              <option value="2">Luxury Trip</option>
-            </select>
-          </div>
-        </div>
-        <div class="row g-3 m-2">
-          <div class="col-md">
-            <label for="Adults">Adults</label>
-            <select class="form-select" id="Adults" name="Adults" required>
-              <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="2">3</option>
-              <option value="2">4</option>
-              <option value="2">5</option>
-              <option value="2">6</option>
-              <option value="2">7</option>
-              <option value="2">8</option>
-              <option value="2">9</option>
-              <option value="2">10</option>
-            </select>
-          </div>
-          <div class="col-md">
-            <label for="Children">Children</label>
-            <select class="form-select" id="Children" name="Children" required>
-              <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="2">3</option>
-              <option value="2">4</option>
-              <option value="2">5</option>
-              <option value="2">6</option>
-              <option value="2">7</option>
-              <option value="2">8</option>
-              <option value="2">9</option>
-              <option value="2">10</option>
-            </select>
-          </div>
-          <div class="col-md">
-            <label for="Group">Group</label>
-            <select class="form-select" id="Group" name="Group" required>
-              <option selected>0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="2">3</option>
-              <option value="2">4</option>
-              <option value="2">5</option>
-              <option value="2">6</option>
-              <option value="2">7</option>
-              <option value="2">8</option>
-              <option value="2">9</option>
-              <option value="2">10</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-mb m-2">
-            <label for="Message">Message</label>
-            <textarea class="form-control" id="Message" name="Message" rows="3"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="btn col-md mt-5">
-            <button type="submit" class="btn-color btn-shadow">Booking Inquiry</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <div class="col-md mt-3 text-center text-btm">
-        <p>Book Your Trip With Us.</p>
       </div>
     </div>
     <!-- Booking Inquiry Form End-->
@@ -417,28 +427,28 @@
               <div class="card-body mt-2">
                 <p class="visiting-date">August 25, 2020</p>
                 <h4 class="mt-2 mb-3">Parashar Lake & Tunga Mata Trek</h4>
-                <a href="#" class="btn-color stretched-link">Read more</a>
+                <a href="#" class="form-btn-color stretched-link">Read more</a>
               </div>
             </div>
           </div>
         </div>
         <div class="card mb-3 me-3"  style="width: 650px;">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class=" col-md-4">
               <img src="img/WhatsApp-Image-2020-08-17-at-01.22.03-1-960x750.jpeg" alt=""  class="img-fluid my-2"/>
             </div>
             <div class="col-md-8">
               <div class="card-body mt-2">
                 <p class="visiting-date">August 17, 2020</p>
                 <h4 class="mt-2 mb-3">Dev Roopa Trek Malana</h4>
-                <a href="#" class="btn-color stretched-link">Read more</a>
+                <a href="#" class="form-btn-color stretched-link">Read more</a>
               </div>
             </div>
           </div>
         </div>
         <div class="card mb-3 me-3"  style="width: 650px;">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class=" col-md-4 ">
               <img
                 src="img/WhatsApp-Image-2020-03-26-at-01.40.22-954x750.jpeg" alt=""  class="img-fluid my-2"/>
             </div>
@@ -446,14 +456,14 @@
               <div class="card-body mt-2">
                 <p class="visiting-date">March 26, 2020</p>
                 <h4 class="mt-2 mb-3">Neelkanth Mahadev Lake Trek</h4>
-                <a href="#" class="btn-color stretched-link">Read more</a>
+                <a href="#" class="form-btn-color stretched-link">Read more</a>
               </div>
             </div>
           </div>
         </div>
         <div class="card mb-3 me-3"  style="width: 650px;">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 ">
               <img
                 src="img/EAK_0252-01-960x750.jpeg" alt=""  class="img-fluid my-2"/>
             </div>
@@ -461,7 +471,7 @@
               <div class="card-body mt-2">
                 <p class="visiting-date">September 13, 2020</p>
                 <h4 class="mt-2 mb-3">Quick Manali (4N5D)</h4>
-                <a href="#" class="btn-color stretched-link">Read more</a>
+                <a href="#" class="form-btn-color stretched-link">Read more</a>
               </div>
             </div>
           </div>
@@ -528,12 +538,14 @@
 
     <!-- Navigation dropdown-menu Script-->
     <script>
-          $(document).ready(function(){
-      
-          $("#dropdown").click(function(){
-            $(".dropdown-menu").slideToggle();
-          });
-      });
+          $(document).ready(function () {
+
+              $("#dropdown").click(function () {
+                $(".dropdown-menu").slideToggle();
+              });
+              
+            });
+     
     </script>
     <!-- Navigation dropdown-menu Script End-->
 
